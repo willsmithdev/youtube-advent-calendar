@@ -1,0 +1,232 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Chrimstasssssssss</title>
+        <!--
+                \ /
+               ->*<-
+                /_\
+               /_\_\
+              /_/_/_\
+              /_\_\_\
+             /_/_/_/_\
+             /_\_\_\_\
+            /_/_/_/_/_\
+            /_\_\_\_\_\
+           /_/_/_/_/_/_\
+           /_\_\_\_\_\_\
+          /_/_/_/_/_/_/_\
+               [___]
+
+          MERRY CHRISTMAS
+        -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+       
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            canvas{
+                background-image: linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+                background-image: -o-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+                background-image: -moz-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+                background-image: -webkit-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+                background-image: -ms-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+                
+                background-image: -webkit-gradient(
+                    linear,
+                    left bottom,
+                    left top,
+                    color-stop(0, rgb(105,173,212)),
+                    color-stop(0.84, rgb(23,82,145))
+                );
+
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .container{
+                max-width: 930px;
+            }
+
+            .calendarDay{
+                padding-top:40px;
+                padding-bottom:40px;
+                color:white;
+            }
+
+            .christmasDay{
+                padding-top:160px;
+                padding-bottom:160px;
+                color:white;
+                font-size:16px;
+            }
+
+            .door
+            {                    
+                margin:10px;
+                text-align:center;
+                background-image: url(img/pressy.png);
+                background-size: 100% 100%;
+                max-width:105;
+                margin-left:auto;
+                margin-right:auto;
+            }
+
+            .christmasDayDoor
+            {
+                margin:10px;
+                text-align:center;
+                background-image: url(img/pressy.png);
+                background-size: 100% 100%;
+                max-width:280px;
+                margin-left:auto;
+                margin-right:auto;
+            }
+
+            .locked
+            {                           
+                cursor: not-allowed;
+            }
+
+            .unlocked
+            {                           
+                cursor: pointer;
+            }
+        </style>
+
+        <canvas id="canvas"></canvas>
+        
+        <div id="calendar" class="container" style="margin-top:10px; position: relative;">
+            <div class="row" style="text-align:center;">
+                <img src="img/merrychristmas.png" style="width:50%;"/>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-6">
+                            <div id="14" class="door"><div  class="calendarDay">14</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="6"  class="door"><div class="calendarDay">6</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="22" class="door"><div  class="calendarDay">22</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="3"  class="door"><div class="calendarDay">3</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="1"  class="door"><div class="calendarDay">1</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="19" class="door"><div  class="calendarDay">19</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="10" class="door"><div  class="calendarDay">10</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="4"  class="door"><div class="calendarDay">4</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="5"  class="door"><div class="calendarDay">5</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="21" class="door"><div  class="calendarDay">21</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-6">
+                            <div id="16" class="door"><div  class="calendarDay">16</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="8"  class="door"><div class="calendarDay">8</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="13" class="door"><div  class="calendarDay">13</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="23" class="door"><div  class="calendarDay">23</div></div>
+                        </div>
+                        <div class="col-xs-12 col-md-12">
+                            <div id="25" class="door christmasDayDoor"><div class="christmasDay">25</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-6">
+                            <div id="2"  class="door"><div class="calendarDay">2</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="17" class="door"><div  class="calendarDay">17</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="15" class="door"><div  class="calendarDay">15</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="11" class="door"><div  class="calendarDay">11</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="9"  class="door"><div class="calendarDay">9</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="12" class="door"><div  class="calendarDay">12</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="7"  class="door"><div class="calendarDay">7</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="20" class="door"><div  class="calendarDay">20</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="24" class="door"><div  class="calendarDay">24</div></div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div id="18" class="door"><div  class="calendarDay">18</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="text-align:center; margin-bottom:10px;">
+                <img src="img/footer.png" style="width:50%;"/>
+            </div>
+        </div>
+
+        <div id="christmasPlayahhhhh" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe id="christmasiframe" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <script src="js/snow.js"></script>
+        <script src="js/properchrimbo.js"></script>
+        <script>
+            init();
+        </script>        
+    </body>
+</html>
