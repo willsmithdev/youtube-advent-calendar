@@ -60,8 +60,8 @@ var chrimbosongs = {
   "21": "",
   "22": "",
   "23": "",
-  "24": "",
-  "25": "https://www.youtube.com/embed/oiSn2JuDQSc?controls=0&autoplay=1"
+  "24": "https://www.youtube.com/embed/oiSn2JuDQSc?controls=0&autoplay=1",
+  "25": "https://www.youtube.com/embed/aj17qdSY1zA?controls=0&autoplay=1"
 }
 
 $( document ).ready(function() {
