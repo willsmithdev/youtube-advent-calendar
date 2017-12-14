@@ -50,7 +50,7 @@ var chrimbosongs = {
   "11": "https://www.youtube.com/embed/ZcV3J2Feieg?controls=0&autoplay=1",
   "12": "https://www.youtube.com/embed/OR07r0ZMFb8?controls=0&autoplay=1",
   "13": "https://www.youtube.com/embed/rUT4TuEEWMg?controls=0&autoplay=1",
-  "14": "",
+  "14": "https://www.youtube.com/embed/oiSn2JuDQSc?controls=0&autoplay=1",
   "15": "",
   "16": "",
   "17": "",
@@ -60,7 +60,7 @@ var chrimbosongs = {
   "21": "",
   "22": "",
   "23": "",
-  "24": "https://www.youtube.com/embed/oiSn2JuDQSc?controls=0&autoplay=1",
+  "24": "",
   "25": "https://www.youtube.com/embed/aj17qdSY1zA?controls=0&autoplay=1"
 }
 
