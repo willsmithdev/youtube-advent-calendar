@@ -58,7 +58,7 @@ var chrimbosongs = {
   "19": "https://www.youtube.com/embed/JuKoDcWu_g4?controls=0&autoplay=1",
   "20": "https://www.youtube.com/embed/94lcKzEX2Yk?controls=0&autoplay=1",
   "21": "https://www.youtube.com/embed/GCDWt7aVMVI?controls=0&autoplay=1",
-  "22": "",
+  "22": "https://www.youtube.com/embed/bg7_C_dz-f8?controls=0&autoplay=1",
   "23": "",
   "24": "",
   "25": "https://www.youtube.com/embed/aj17qdSY1zA?controls=0&autoplay=1"
